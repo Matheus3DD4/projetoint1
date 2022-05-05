@@ -4,18 +4,25 @@ export default {
   components: { NovoBloco },
   data() {
     return {
-      professores: ["Eduardo", "Marco", "Ivo"],
+      nome: ["2012"],
     };
   },
 };
 </script>
 <template>
-  <main id="content">
-    <NovoBloco titulo="Alunos" :nomes="['Miguel', 'Ana']" />
-    <NovoBloco titulo="Professores" :nomes="professores" />
-    <NovoBloco class="alerta" />
-    <NovoBloco class="alerta" />
+  <section id="capa">
+    <NovoBloco titulo="Companhia das Letras" :nome="['07/2009']" />
+  </section>
+  <section id="editoras">
+    <NovoBloco titulo="Antofágica" :nome="['04/2022']" />
+    <NovoBloco titulo="Buzz" :nome="['02/2021']" />
+    <NovoBloco titulo="Aleph" :nome="['2021']" />
+    <NovoBloco titulo="Biblioteca Azul" :nome="['2021']" />
+    <NovoBloco titulo="Companhia das Letras" :nome="['2021']" />
+    <NovoBloco titulo="Amoler" :nome="['02/2021']" />
     <NovoBloco />
-  </main>
+  </section>
+
 </template>
-<style></style>
+<style>
+</style>

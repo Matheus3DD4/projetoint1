@@ -1,31 +1,42 @@
 body {
   margin: 0;
   height: 100vh;
+  background-color: #dad8d8;
 }
 
 #app {
   height: 100%;
   display: grid;
-  grid-template-columns: 15% 1fr;
-  grid-template-rows: 20% auto 20%;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 20% auto;
   grid-template-areas: 
     "header header"
-    "sidenav content"
-    "sidenav content";
+    "capa editoras";
 }
 
 #header, #content, #sidenav, #footer {
-  border: 1px solid green;
+  border: 1px solid rgb(0, 2, 128);
 }
 
 #header {
   grid-area: header;
+  text-align: center;
 }
-#content {
-  grid-area: content;
+#editoras {
+  grid-area: editoras;
   display: flex;
   flex-wrap: wrap;
 }
+
+#capa  {
+  grid-area: capa;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
 #footer {
   grid-area: footer;
 }
@@ -34,11 +45,11 @@ body {
 }
 
 .block {
-  width: 250px;
-  height: 300px;
-  border: 1px solid rgb(12, 176, 48);
+  width: 200px;
+  height: 250px;
+  border: 1px solid rgb(29, 60, 194);
   border-radius: 15px;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
-  background-color: #B6F5A4;
+  background-color: #adccf5;
 }
