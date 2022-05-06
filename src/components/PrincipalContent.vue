@@ -4,14 +4,16 @@ export default {
   components: { NovoBloco },
   data() {
     return {
-      nome: ["2012"],
+      imagens: [new URL("./img/original.jpeg", import.meta.url).href],
     };
   },
 };
 </script>
 <template>
   <section id="capa">
-    <NovoBloco titulo="Companhia das Letras" :nome="['07/2009']" />
+    <section v-for="(imagem, i) of imagens" :key="i">
+      <img :src="imagem" alt="" />
+    </section>
   </section>
   <section id="editoras">
     <NovoBloco titulo="Antofágica" :nome="['04/2022']" />
@@ -22,7 +24,5 @@ export default {
     <NovoBloco titulo="Amoler" :nome="['02/2021']" />
     <NovoBloco />
   </section>
-
 </template>
-<style>
-</style>
+<style></style>
