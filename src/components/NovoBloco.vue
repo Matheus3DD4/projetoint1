@@ -2,20 +2,19 @@
 export default {
   // props: ["titulo"],
   props: {
-    titulo: {
+    nome: {
       default: "A DEFINIR",
+      type: String,
     },
-    nomes: Array,
+    ano: String,
+    imagem: String,
   },
 };
 </script>
 <template>
   <article class="block">
-    <h1>{{ titulo }}</h1>
-    <ul>
-      <li v-for="(nome, i) of nomes" :key="i">
-        {{ nome }}
-      </li>
-    </ul>
+    <h2>{{ nome }}</h2>
+    <h3>{{ ano }}</h3>
+    <img :src="imagem" width="120" height="200" alt="" />
   </article>
 </template>
