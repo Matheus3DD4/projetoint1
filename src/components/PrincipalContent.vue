@@ -1,7 +1,8 @@
 <script>
-import NovoBloco from "./NovoBloco.vue";
+import BlocoCapa from "./BlocoCapa.vue";
+import BlocoEditoras from "./BlocoEditoras.vue";
 export default {
-  components: { NovoBloco },
+  components: { BlocoCapa, BlocoEditoras },
   data() {
     return {
       capa: [
@@ -50,7 +51,7 @@ export default {
 </script>
 <template>
   <section id="capa">
-    <NovoBloco
+    <BlocoCapa
       v-for="(capa, i) of capa"
       :key="i"
       :nome="capa.nome"
@@ -59,7 +60,7 @@ export default {
     />
   </section>
   <section id="editoras">
-    <NovoBloco
+    <BlocoEditoras
       v-for="(editora, i) of editoras"
       :key="i"
       :nome="editora.nome"
