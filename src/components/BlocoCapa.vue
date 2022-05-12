@@ -12,11 +12,11 @@ export default {
 };
 </script>
 <template>
-  <article class="block">
+  <article class="blockcapa">
     <h2>{{ nome }}</h2>
     <h3>{{ ano }}</h3>
     <div class="imagem">
-      <img :src="imagem" width="275" height="370" alt="" />
+      <img :src="imagem" width="265" height="370" alt="" />
     </div>
   </article>
 </template>

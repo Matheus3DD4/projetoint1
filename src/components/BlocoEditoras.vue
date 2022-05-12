@@ -12,7 +12,7 @@ export default {
 };
 </script>
 <template>
-  <article class="block">
+  <article class="blockeditoras">
     <h2>{{ nome }}</h2>
     <h3>{{ ano }}</h3>
     <div class="imagem">
