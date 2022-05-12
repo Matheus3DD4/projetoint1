@@ -1,16 +1,23 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: #e5e5e584;
+  background-color: #13212b;
 }
 
 h1 {
   font-size: 60px;
+  color: #ffe917;
 }
 
 h2 {
   font-size: 30px;
+  color: #ffe917;
 }
+
+h3 {
+  color: #ffe917;
+}
+
 #app {
   height: 100%;
   display: grid;
@@ -19,10 +26,6 @@ h2 {
   grid-template-areas: 
     "header header"
     "capa editoras";
-}
-
-#header, #content, #sidenav, #footer {
-  border: 1px solid rgb(0, 2, 128);
 }
 
 #header {
@@ -36,9 +39,10 @@ h2 {
   flex-wrap: wrap;
 }
 
-.img {
+.imagem {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -48,7 +52,7 @@ h2 {
   height: 100vh;
   justify-content: center;
   align-items: center;
-
+  margin: 0 auto;
 }
 
 #footer {
@@ -59,11 +63,14 @@ h2 {
 }
 
 .block {
-  width: 320px;
+  width: 310px;
   height: 410px;
-  border: 1px solid rgb(29, 60, 194);
+  border: 1px solid #ffe917;
   border-radius: 15px;
   padding: 10px;
   margin: 10px;
-  background-color: #adccf5;
+  background-color: #1f3544;
+}
+editora.imagem{
+  margin: 0 auto;
 }

@@ -4,6 +4,14 @@ export default {
   components: { NovoBloco },
   data() {
     return {
+      capa: [
+        {
+          nome: "Original",
+          ano: "2009",
+          imagem: new URL("./img/original.jpeg", import.meta.url).href,
+        },
+      ],
+
       editoras: [
         {
           nome: "Antofágica",
@@ -36,22 +44,19 @@ export default {
           imagem: new URL("./img/aleph.jpg", import.meta.url).href,
         },
       ],
-      imagens: [
-        {
-          nome: "Original",
-          ano: "2009",
-          imagem: new URL("./img/original.jpeg", import.meta.url).href,
-        },
-      ],
     };
   },
 };
 </script>
 <template>
   <section id="capa">
-    <section v-for="(imagem, i) of imagens" :key="i">
-      <img :src="imagem" alt="" />
-    </section>
+    <NovoBloco
+      v-for="(capa, i) of capa"
+      :key="i"
+      :nome="capa.nome"
+      :ano="capa.ano"
+      :imagem="capa.imagem"
+    />
   </section>
   <section id="editoras">
     <NovoBloco

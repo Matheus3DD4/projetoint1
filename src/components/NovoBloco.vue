@@ -15,6 +15,8 @@ export default {
   <article class="block">
     <h2>{{ nome }}</h2>
     <h3>{{ ano }}</h3>
-    <img :src="imagem" width="120" height="200" alt="" />
+    <div class="imagem">
+      <img :src="imagem" width="175" height="270" alt="" />
+    </div>
   </article>
 </template>
