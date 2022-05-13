@@ -57,6 +57,28 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
+}
+
+
+.imgedit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
 }
 
 .blockeditoras {

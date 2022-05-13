@@ -13,9 +13,13 @@ export default {
 </script>
 <template>
   <article class="blockeditoras">
-    <h2>{{ nome }}</h2>
-    <h3>{{ ano }}</h3>
-    <div class="imagem">
+    <div class="h2">
+      <h2>{{ nome }}</h2>
+    </div>
+    <div class="h3">
+      <h3>{{ ano }}</h3>
+    </div>
+    <div class="imgedit">
       <img :src="imagem" width="175" height="270" alt="" />
     </div>
   </article>

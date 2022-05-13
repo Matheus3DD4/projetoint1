@@ -13,8 +13,12 @@ export default {
 </script>
 <template>
   <article class="blockcapa">
-    <h2>{{ nome }}</h2>
-    <h3>{{ ano }}</h3>
+    <div class="h2">
+      <h2>{{ nome }}</h2>
+    </div>
+    <div class="h3">
+      <h3>{{ ano }}</h3>
+    </div>
     <div class="imagem">
       <img :src="imagem" width="265" height="370" alt="" />
     </div>
