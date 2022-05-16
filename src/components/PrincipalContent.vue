@@ -30,11 +30,6 @@ export default {
           imagem: new URL("./img/amoler.jpg", import.meta.url).href,
         },
         {
-          nome: "Biblioteca Azul",
-          ano: "2021",
-          imagem: new URL("./img/biblue.jpg", import.meta.url).href,
-        },
-        {
           nome: "Companhia das Letras",
           ano: "2021",
           imagem: new URL("./img/complet.jpg", import.meta.url).href,
@@ -43,6 +38,11 @@ export default {
           nome: "Aleph",
           ano: "2021",
           imagem: new URL("./img/aleph.jpg", import.meta.url).href,
+        },
+        {
+          nome: "Biblioteca Azul",
+          ano: "2021",
+          imagem: new URL("./img/biblue.jpg", import.meta.url).href,
         },
       ],
     };
