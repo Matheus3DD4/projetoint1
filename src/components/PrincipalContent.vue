@@ -16,17 +16,17 @@ export default {
       editoras: [
         {
           nome: "Antofágica",
-          ano: "04/2022",
+          ano: "2022",
           imagem: new URL("./img/antofagica.jpg", import.meta.url).href,
         },
         {
           nome: "Buzz",
-          ano: "02/2021",
+          ano: "2021",
           imagem: new URL("./img/buzz.jpg", import.meta.url).href,
         },
         {
           nome: "Amoler",
-          ano: "02/2021",
+          ano: "2021",
           imagem: new URL("./img/amoler.jpg", import.meta.url).href,
         },
         {
