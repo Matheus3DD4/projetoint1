@@ -20,7 +20,7 @@ export default {
       <h3>{{ ano }}</h3>
     </div>
     <div class="imagem">
-      <img :src="imagem" width="305" height="455" alt="" />
+      <img :src="imagem" width="320" height="465" alt="" />
     </div>
   </article>
 </template>

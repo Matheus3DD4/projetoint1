@@ -116,6 +116,11 @@ h3 {
   margin: 10px;
   background-color: #1f3544;
 }
+
+.blockeditoras:hover {
+  border: solid #1f3544 1.25px;
+}
+
 .blockcapa {
   width: 570px;
   height: 850px;
